@@ -16,7 +16,8 @@ class WeatherController extends Controller
 
     public function index()
     {
-        return view('weather.index');
+        $cities = ['Tokyo', 'Yokohama', 'Kyoto', 'Osaka', 'Sapporo', 'Nagoya'];
+        return view('weather.index', compact('cities'));
     }
 
     public function forecast($city)

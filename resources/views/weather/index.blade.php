@@ -5,11 +5,9 @@
         <label class="text-white">Select City you want to know the weather forecast</label>
         <select class="form-control" id="cities">
             <option value="">Select City</option>
-            <option value="Tokyo">Tokyo</option>
-            <option value="Yokohama">Yokohama</option>
-            <option value="Kyoto">Kyoto</option>
-            <option value="Sapporo">Sapporo</option>
-            <option value="Nagoya">Nagoya</option>
+            @foreach($cities as $city)
+                <option value="{{ $city }}">{{ $city }}</option>
+            @endforeach
         </select>    
 
     </div>
