@@ -33,8 +33,6 @@
                     type: 'get',
                     dataType: 'json',
                     success: function(response){
-                        console.log(response);
-                        console.log(generateUI(response));
                         $('#forecasts .row').html(generateUI(response));
                     },
                     error: function(xhr){
@@ -48,7 +46,7 @@
     })
 
     function generateUI(response){
-        let forecastCard = 'sadas'; 
+        let forecastCard = ''; 
 
         $.each(response.forecasts, function(key, value){
             forecastCard += `<div class="col">
