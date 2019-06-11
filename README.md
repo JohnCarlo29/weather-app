@@ -4,7 +4,7 @@ This page aims to provide weather information of Japan for foreign tourists visi
 
 ### App Description
 
-The app will do a 5 day forecast for 5 cities of japan
+The app will do a 5 day forecast for 6 cities of japan
 
 Cities:
 * Tokyo
